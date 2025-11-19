@@ -1,0 +1,15 @@
+.videoContainer2 {
+  width: 100%;
+  height: auto; 
+  overflow: hidden;
+  position: relative;
+  padding-top: 0; 
+}
+
+.videoBanner2 {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  display: block;
+}
+

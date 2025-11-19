@@ -1,0 +1,19 @@
+
+.floating-whatsapp-chatbox {
+  width: 420px !important;   
+  height: 520px !important; 
+  font-size: 1.05rem !important; 
+}
+
+.floating-whatsapp-button img {
+width: 150px !important;
+height: 150px !important;
+}
+
+
+@media (max-width: 600px) {
+  .floating-whatsapp-chatbox {
+    width: 90% !important;
+    height: 450px !important;
+  }
+}

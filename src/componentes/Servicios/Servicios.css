@@ -1,0 +1,45 @@
+.serviciosConteiner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    justify-content: center;
+    margin: 30px;
+    padding: 90px;
+    color: white;
+    opacity: 0; 
+    transform: translateY(50px); 
+    transition: all 0.8s ease-out;
+}
+
+.serviciosConteiner.visible {
+  opacity: 1; 
+  transform: translateY(0); 
+}
+
+.titleServicios{
+    font-size: 40px;
+    font-weight: lighter;
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+
+.descrpServicios{
+    font-size: 25px;
+    font-weight: lighter;
+    margin-top: 20px;
+    margin-bottom: 70px;
+
+}
+
+.estrategiaServicios{
+    text-align: center;
+    justify-content: center;
+    font-family: 'Old Standard TT', serif ;
+    font-size: 30px;
+    font-weight: lighter;
+    grid-column: 1 / -1;
+    margin-top: 45px;
+    margin-bottom: 40px;
+    
+}

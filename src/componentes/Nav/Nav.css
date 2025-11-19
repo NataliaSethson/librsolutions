@@ -1,0 +1,74 @@
+.barra-verde {
+  background-color:white !important;
+}
+
+.drawer-verde {
+  background-color: white;
+  height: 100%;
+  font-size: 50px !important;
+  margin-top: 170px !important;
+}
+
+.textList .MuiListItemText-primary {
+  font-family: 'Old Standard TT', serif !important;
+  font-size: 23px !important;
+  color:  #64d881 !important; 
+  text-align: center;
+  
+}
+
+@media (max-width: 768px) {
+
+  .barra-verde .MuiToolbar-root {
+    min-height: 150px !important;
+    position: relative;
+  }
+
+  .barra-verde .MuiToolbar-root > div {
+    position: absolute !important;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+  }
+
+  .barra-verde img {
+    height: 200px !important;
+    margin-left: 20px !important;
+  }
+
+  .barra-verde button svg {
+    font-size: 28px !important;
+  }
+
+  .barra-verde button {
+    margin-left: 10px !important;
+    margin-top: 5px !important;
+    z-index: 30 !important;
+  }
+
+  .drawer-verde {
+    width: 150px !important;   
+    margin-top: 100px !important;
+  }
+
+ 
+  .textList .MuiListItemText-primary {
+    font-size: 15px !important; 
+  }
+
+
+  .drawer-verde .MuiListItem-root {
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+  }
+    .barra-verde button svg {
+    font-size: 15px !important; 
+  }
+
+  
+  .barra-verde button {
+    margin-left: 2px !important;
+    margin-top: 5px !important;
+    z-index: 50 !important;
+  }
+}
