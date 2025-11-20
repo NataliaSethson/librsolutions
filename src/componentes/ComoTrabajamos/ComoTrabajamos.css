@@ -101,6 +101,80 @@
 }
 
 
+@media (max-width: 480px) {
+  .work-process {
+    padding: 50px 12px;
+  }
+
+  .work-process h2 {
+    font-size: 2rem;
+  }
+
+  .work-process p {
+    font-size: 1rem;
+    margin-bottom: 25px;
+  }
+
+  .step-card {
+    padding: 18px 12px;
+    min-height: 250px; 
+  }
+
+  .icon-circle {
+    width: 35px;
+    height: 35px;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+
+  .card-content h3 {
+    font-size: 1.4rem;
+  }
+
+  .card-content .description {
+    font-size: 1rem;
+  }
+}
+
+
+@media (max-width: 200px) {
+  .work-process {
+    padding: 30px 8px;
+  }
+
+  .work-process h2 {
+    font-size: 1.5rem;
+  }
+
+  .work-process p {
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+  }
+
+  .steps-container {
+    gap: 10px;
+  }
+
+  .step-card {
+    padding: 12px 8px;
+    min-height: 180px; 
+  }
+
+  .icon-circle {
+    width: 25px;
+    height: 25px;
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+
+  .card-content h3 {
+    font-size: 1rem;
+  }
+
+  .card-content .description {
+    font-size: 0.8rem;
+  }
+}
 
 
 

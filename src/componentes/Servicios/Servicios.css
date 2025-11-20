@@ -1,15 +1,15 @@
-.serviciosConteiner{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    justify-content: center;
-    margin: 30px;
-    padding: 90px;
-    color: white;
-    opacity: 0; 
-    transform: translateY(50px); 
-    transition: all 0.8s ease-out;
+.serviciosConteiner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  justify-content: center;
+  margin: 30px;
+  padding: 90px;
+  color: white;
+  opacity: 0; 
+  transform: translateY(50px); 
+  transition: all 0.8s ease-out;
 }
 
 .serviciosConteiner.visible {
@@ -17,29 +17,96 @@
   transform: translateY(0); 
 }
 
-.titleServicios{
-    font-size: 40px;
-    font-weight: lighter;
-    margin-top: 30px;
-    margin-bottom: 35px;
+.titleServicios {
+  font-size: 40px;
+  font-weight: lighter;
+  margin-top: 30px;
+  margin-bottom: 35px;
 }
 
-.descrpServicios{
-    font-size: 25px;
-    font-weight: lighter;
-    margin-top: 20px;
-    margin-bottom: 70px;
-
+.descrpServicios {
+  font-size: 25px;
+  font-weight: lighter;
+  margin-top: 20px;
+  margin-bottom: 70px;
 }
 
-.estrategiaServicios{
-    text-align: center;
-    justify-content: center;
-    font-family: 'Old Standard TT', serif ;
-    font-size: 30px;
-    font-weight: lighter;
-    grid-column: 1 / -1;
-    margin-top: 45px;
+.estrategiaServicios {
+  text-align: center;
+  justify-content: center;
+  font-family: 'Old Standard TT', serif;
+  font-size: 30px;
+  font-weight: lighter;
+  grid-column: 1 / -1;
+  margin-top: 45px;
+  margin-bottom: 40px;
+}
+
+
+@media (max-width: 768px) {
+  .serviciosConteiner {
+    grid-template-columns: 1fr; 
+    padding: 50px;
+    margin: 20px;
+  }
+
+  .titleServicios {
+    font-size: 32px;
+  }
+
+  .descrpServicios {
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+
+  .estrategiaServicios {
+    font-size: 26px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .serviciosConteiner {
+    padding: 35px;
+    margin: 10px;
+  }
+
+  .titleServicios {
+    font-size: 26px;
+  }
+
+  .descrpServicios {
+    font-size: 18px;
     margin-bottom: 40px;
-    
+  }
+
+  .estrategiaServicios {
+    font-size: 22px;
+    margin-top: 35px;
+  }
+}
+
+@media (max-width: 200px) {
+  .serviciosConteiner {
+    padding: 20px;
+    margin: 5px;
+  }
+
+  .titleServicios {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+
+  .descrpServicios {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+
+  .estrategiaServicios {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }

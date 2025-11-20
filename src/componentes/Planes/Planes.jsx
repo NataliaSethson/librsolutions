@@ -58,7 +58,11 @@ export default function Planes() {
         variant="h4" 
         align="center" 
         gutterBottom 
-        sx={{ color: "white", fontWeight: 700 }}
+        sx={{ 
+          color: "white", 
+          fontWeight: 700,
+          "@media (max-width:200px)": { fontSize: "1.2rem" }
+        }}
       >
         Planes y Beneficios
       </Typography>
@@ -66,16 +70,18 @@ export default function Planes() {
       <Typography 
         variant="subtitle1" 
         align="center" 
-        sx={{ mb: 6, color: "rgba(255,255,255,0.9)" }}
+        sx={{ 
+          mb: 6, 
+          color: "rgba(255,255,255,0.9)",
+          "@media (max-width:200px)": { fontSize: "0.8rem", marginBottom: "15px" }
+        }}
       >
         Elegí la solución que mejor se adapte a tu proyecto
       </Typography>
 
       <Grid container spacing={4} justifyContent="center">
-
         {planes.map((plan) => (
           <Grid item xs={12} md={4} key={plan.title}>
-            
             <Card
               sx={{
                 borderRadius: 3,
@@ -90,6 +96,11 @@ export default function Planes() {
                 "&:hover": {
                   transform: "scale(1.05)",
                   boxShadow: "0 0 25px rgba(0,0,0,0.5)",
+                },
+                "@media (max-width:200px)": {
+                  p: 1,
+                  borderRadius: 2,
+                  "&:hover": { transform: "none", boxShadow: "none" }
                 }
               }}
             >
@@ -101,25 +112,29 @@ export default function Planes() {
                   "& .MuiCardHeader-title": {
                     fontSize: "1.4rem",
                     fontWeight: 600,
-                    color: "white"
+                    color: "white",
+                    "@media (max-width:200px)": { fontSize: "1rem" }
                   },
                   "& .MuiCardHeader-subheader": {
-                    color: "rgba(255,255,255,0.5)"
+                    color: "rgba(255,255,255,0.5)",
+                    "@media (max-width:200px)": { fontSize: "0.65rem" }
                   }
                 }}
               />
 
               <CardContent sx={{ display: "flex", flexDirection: "column", flexGrow: 1 }}>
-                
                 <List sx={{ flexGrow: 1 }}>
                   {plan.items.map((text) => (
-                    <ListItem key={text} sx={{ py: 0.4 }}>
+                    <ListItem key={text} sx={{ py: 0.4, "@media (max-width:200px)": { py: 0.2 } }}>
                       <ListItemIcon>
-                        <CheckIcon sx={{ color: "#64d881" }} />
+                        <CheckIcon sx={{ color: "#64d881", "@media (max-width:200px)": { fontSize: "1rem" } }} />
                       </ListItemIcon>
                       <ListItemText 
                         primary={text} 
-                        sx={{ color: "white" }}
+                        sx={{ 
+                          color: "white",
+                          "& span": { "@media (max-width:200px)": { fontSize: "0.7rem" } }
+                        }}
                       />
                     </ListItem>
                   ))}
@@ -141,7 +156,8 @@ export default function Planes() {
                     "&:hover": {
                       backgroundColor: "#f3f3f3",
                       transform: "translateY(-3px)"
-                    }
+                    },
+                    "@media (max-width:200px)": { fontSize: "0.7rem", padding: "4px 0", mt: 1 }
                   }}
                 >
                   Consultar
@@ -149,10 +165,8 @@ export default function Planes() {
 
               </CardContent>
             </Card>
-
           </Grid>
         ))}
-
       </Grid>
 
       <Box sx={{ textAlign: "center", mt: 6 }}>
@@ -171,16 +185,17 @@ export default function Planes() {
             "&:hover": {
               backgroundColor: "#f3f3f3",
               transform: "translateY(-3px)",
-            }
+            },
+            "@media (max-width:200px)": { fontSize: "0.8rem", px: 2, py: 1 }
           }}
         >
           Ver planes individuales
         </Button>
       </Box>
-
     </Box>
   );
 }
+
 
 
 

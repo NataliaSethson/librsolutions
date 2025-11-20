@@ -8,5 +8,25 @@
 .videoBanner {
   width: 100%;
   height: 100%;
-  object-fit: cover; 
+  object-fit: cover;
+}
+
+
+@media (max-width: 768px) {
+  .videoContainer {
+    height: 300px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .videoContainer {
+    height: 200px;
+  }
+}
+
+@media (max-width: 200px) {
+  .videoContainer {
+    height: 80px;
+  }
 }
